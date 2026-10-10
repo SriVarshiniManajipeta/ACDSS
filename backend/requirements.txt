@@ -1,0 +1,28 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+sqlalchemy==2.0.36
+pydantic==2.10.4
+python-dotenv==1.0.1
+
+# File upload support
+python-multipart>=0.0.9
+
+# OCR
+pytesseract>=0.3.13
+Pillow>=10.0.0
+opencv-python-headless>=4.9.0
+
+# LLM & RAG pipeline
+# NOTE: LangChain 1.0 removed AgentExecutor and create_tool_calling_agent from
+# `langchain.agents` and moved them to `langchain-classic`. app/agent.py imports
+# from the new home first and falls back to the old one, so both work — but
+# langchain-classic must be present when langchain is 1.x.
+langchain>=0.3.0
+langchain-classic>=1.0.0; python_version >= "3.9"
+langchain-core>=0.3.0
+langchain-groq>=0.2.0
+langchain-google-genai>=2.0.0
+langchain-chroma>=0.1.0
+langchain-community>=0.3.0
+langgraph>=0.2.0
+chromadb>=0.5.0

@@ -1,0 +1,44 @@
+# --- Backend (Python) ---
+backend/.env
+backend/.env.local
+*.env
+!backend/.env.example
+
+backend/venv/
+backend/env/
+backend/.venv/
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+backend/*.db
+backend/*.db-journal
+backend/*.sqlite3
+.pytest_cache/
+
+images/
+
+report/
+report/figures
+
+# --- Frontend (Node/Vite) ---
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Common ---
+*.log
+.DS_Store
+.vscode/
+.idea/
